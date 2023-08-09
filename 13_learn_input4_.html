@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is our book store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <form >
+            <!--
+                NoValidate: for testing
+                <form novalidate>
+
+                Target="_blank": >> new tab (after action or link)
+                <form target=“_blank”>
+             -->
+            <label>Programming language</label>
+            <input list="programming" name="prog">
+            <datalist id="programming">
+                <option value="Phython" >
+                <option value="PHP" >
+                <option value="C++" >
+                <option value="C#" >
+                <option value="C" >
+                <option value="Scala" >
+            </datalist>
+
+            <input type="submit" value="Save">
+
+        </form>
+
+    </body>
+</html>

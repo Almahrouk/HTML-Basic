@@ -1,0 +1,116 @@
+<!doctype html>
+
+<!-- This is comment -->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is our book store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <form>
+            <!-- 
+                Input:
+
+                1)Type:
+                type of input:
+                J)Radio >>  chose only one
+                K)Checkbox >> chose one or more
+
+                L)****** <select> not in input  
+
+
+                14)checked
+
+                15)input  id="win"
+                16)label for="win"
+
+                17)Multiple
+                18)Selected
+
+             -->
+            <hr>
+            <div>
+                <input  id="win" type="radio" name="os" value="Windows" checked>
+                <label for="win">Windows</label>
+            </div>
+
+            <div>
+                <input id="lin" type="radio" name="os" value="Linux">
+                <label for="lin" >Linux</label>
+            </div>
+
+            <div>
+                <input id="mac" type="radio" name="os" value="Mac">
+                <label for="mac" >Mac</label>
+            </div>
+            <br>
+
+
+
+            <hr>
+            <div>
+                <input  id="win1" type="checkbox" name="os" value="Windows" checked>
+                <label for="win1">Windows</label>
+            </div>
+
+            <div>
+                <input id="lin1" type="checkbox" name="os" value="Linux">
+                <label for="lin1" >Linux</label>
+            </div>
+
+            <div>
+                <input id="mac1" type="checkbox" name="os" value="Mac">
+                <label for="mac1" >Mac</label>
+            </div>
+            <br>
+
+
+
+
+            <label for="book">Choose Book</label>
+            <select id="book" name="Book" >
+                <option value="1" selected>Book 1</option>
+                <option value="2">Book 2</option>
+                <option value="3">Book 3</option>
+                <option value="4">Book 4</option>
+                <option value="5">Book 5</option>
+            </select>
+
+
+
+
+
+            <label for="book1">Choose Book1</label>
+            <select id="book1" name="Book1">
+                <optgroup label="Romantic Books">
+                    <option value="10">Book 10</option>
+                    <option value="20">Book 20</option>
+                    <option value="30">Book 30</option>
+                    <option value="40">Book 40</option>
+                    <option value="50">Book 50</option>
+                </optgroup>
+
+                <optgroup label="Police Books">
+                    <option value="60">Book 60</option>
+                    <option value="70">Book 70</option>
+                    <option value="80">Book 80</option>
+                    <option value="90">Book 90</option>
+                    <option value="100">Book 100</option>
+                </optgroup>
+            </select>
+
+
+            <textarea name="subject" cols="20" rows="20" placeholder="Test Text"></textarea>
+
+
+
+
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </body>
+</html>

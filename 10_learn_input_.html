@@ -1,0 +1,120 @@
+<!doctype html>
+
+<!-- This is comment -->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="This is our book store">
+        <title>Book Store</title>
+    </head>
+    <body>
+        <div>
+            <h1>Book Store</h1>
+            <p>This Is My Book Store, Welcome </p>
+        </div>
+        
+        <!--method="post" or method="get"-->
+        <!--action="name.php"-->
+        <form >
+
+            <!--
+                Labe: name of input (for user)
+
+                Input:
+                1)Type: 
+                type of input:
+
+                A)"text“ >>     any input
+                B)"password” >> *****
+                C)"submit” >>   to send information
+                D)"hidden" >>   (ID or Note)  That we sind it to backend ((User cannt see it))
+                E)"Reset" >> it make reset for data
+
+                F)"Email"
+                G)"Color"
+                H)"Range"
+                I)"Number"
+
+
+                2)Value: 
+                name that we put it in the input
+
+                3)Required : 
+                attribute we put it to input 
+                (That make user cannt make SKIP for input )
+                (The user must (Enters or Fills) this input )
+
+                4)Placeholder :
+                Small Note that we give it for user 
+                (It goes automatically when the user starts entering data)
+
+                5)Name:
+                name we give it to input >> only backend can see it
+                we use it to give a name to the input that it make the  backend know type of data that user entering it
+                
+                6)Min 
+                7)Max
+                8)Step
+
+                9)Readonly : 
+                user ((cannt change)) the value in the input 
+                the data (value) inside the input ((is being sent))
+
+                10)Disabled :
+                user ((cannt change)) the value in the input 
+                the data (value) inside the input ((is not being sent))
+
+                11)Autofocus: make focus in a input 
+                (to make focus when the user come in the page)
+
+                12)Minlength:
+                13)Maxlength:
+
+
+            -->
+
+            <input type="hidden" value=" (ID or Note)  That we sind it to backend"> 
+
+            <div>
+                <label>Username</label>
+                <input type="text" required placeholder="Username"   name="user_name" autofocus minlength="8" maxlength="30" >
+            </div>
+
+            <br>
+
+            <div>
+                <label>Password</label>
+                <input type="password" required placeholder="Password"   name="uaer_password" minlength="8" maxlength="20">
+            </div>
+
+            <br>
+
+            <div>
+                <label>Email</label>
+                <input type="email" placeholder="Write A Valid Email" value="any@any2.com"  name="uaer_email"  readonly>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Color</label>
+                <input  type="color" name="Color">
+            </div>
+
+            <div>
+                <label>Range</label>
+                <input  type="range" name="Range" min="0" max="100" step="20">
+            </div>
+
+            <div>
+                <label>Number</label>
+                <input  type="number" name="Number" min="0" max="100" step="10">
+            </div>
+
+            <input type="submit" value="Save">
+            <input type="reset" value="Reset">
+        </form>
+
+    </body>
+</html>
